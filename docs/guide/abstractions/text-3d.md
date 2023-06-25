@@ -6,7 +6,7 @@
 
 ## Usage
 
-To use the `<Text3D />` component you need to pass the `font` prop with the URL of the font JSON file you want to use. TextGeometry uses `typeface`.json generated fonts, you can generate yours [here](http://gero3.github.io/facetype.js/)
+To use the `<Text3D />` component, you need to pass the `font` prop with the URL of the font JSON file you want to use. TextGeometry uses `typeface`.json generated fonts. You can generate yours [here](http://gero3.github.io/facetype.js/).
 
 ```vue
 <template>
@@ -31,7 +31,7 @@ Notice that you need to pass the `<TresMeshNormalMaterial />` component as a chi
 </template>
 ```
 
-In addition, you can use the power of Vue to add reactivity, but you need to apply the needUpdates prop, for example you can create a reactive value, apply a v-model and make the bound, the Text3D component will update
+In addition, you can use the power of Vue to add reactivity, but you need to apply the `needUpdates` prop. For example, you can create a reactive value, apply a v-model, make the bound, and the Text3D component will update.
 
 ```vue
 <template>
@@ -51,13 +51,13 @@ In addition, you can use the power of Vue to add reactivity, but you need to app
 | **size**           | The size of the text.                                                  | 0.5     |
 | **height**         | The height of the text.                                                | 0.2     |
 | **curveSegments**  | The number of curve segments to use when generating the text geometry. | 5       |
-| **bevelEnabled**   | A flag indicating whether beveling should be enabled for the text.     | true    |
+| **bevelEnabled**   | Whether or not beveling should be enabled for the text.                | true    |
 | **bevelThickness** | The thickness of the beveled edge on the text.                         | 0.05    |
 | **bevelSize**      | The size of the beveled edge on the text.                              | 0.02    |
 | **bevelOffset**    | The offset of the beveled edge on the text.                            | 0       |
 | **bevelSegments**  | The number of bevel segments to use when generating the text geometry. | 4       |
-| **center**         | To center the text                                                     | false   |
-| **needUpdates**    | This props add reactivity                                              | false   |
+| **center**         | Whether or not to center the text.                                     | false   |
+| **needUpdates**    | This prop adds reactivity.                                             | false   |
 
 ## References
 
