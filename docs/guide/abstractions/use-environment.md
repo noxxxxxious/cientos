@@ -1,6 +1,6 @@
 # UseEnvironment <Badge type="warning" text="^1.7.0" />
 
-`useEnvironment` composable that automatically sets up a global cubemap, which affects the default `scene.environment`, and optionally `scene.background`.
+`useEnvironment` composable automatically sets up a global cubemap, which affects the default `scene.environment`, and optionally `scene.background`.
 
 It uses the [CubeTextureLoader](https://threejs.org/docs/#api/en/loaders/CubeTextureLoader) to load the cubemap
 
