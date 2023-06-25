@@ -2,13 +2,13 @@
 
 ![](/cientos/MouseParallax.gif)
 
-`<MouseParallax />` is a component that allow you to create easily the pam parallax effect. The camera will update automatically according to the mouse position, creating a beautiful nice effect
+`<MouseParallax />` is a component that allows you to easily create the pam parallax effect. The camera will update automatically according to the mouse position, creating a beautiful, nice effect.
 
 ## Usage
 
-You only need import it and use it `<MouseParallax />` additionally you can pass two props, ease and factor.
+You only need import it to use it. Additionally, you can pass two props: ease and factor.
 
-Factor is a number to increase the movement range of the camera and ease it's a boolean that create a smooth transition. Also you can disabled with the "disable" prop
+`factor` is a number to modify the movement range of the camera. `ease` is a boolean that toggles smooth transitions. In addition, you can disable with the `disabled` prop.
 
 ```vue
 <template>
@@ -26,5 +26,5 @@ Factor is a number to increase the movement range of the camera and ease it's a 
 | Prop         | Description                                             | Default |
 | :----------- | :------------------------------------------------------ | ------- |
 | **disabled** | enable or disabled the effect, boolean                  | false   |
-| **factor**   | Increase the range of the parallax | 2.5       |
-| **ease-factor**   | enable or disabled the easing effect | true       |
+| **factor**   | Modify the range of the parallax                        | 2.5     |
+| **ease**     | enable or disabled the easing effect                    | true    |
