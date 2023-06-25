@@ -34,6 +34,14 @@ You can also pass the `.hdr` file directly:
 You can access the model reference by pasing a `ref` to the `<Environment />` prop and then using the method `getTexture()` to get the object.
 
 ```vue{4,6,9,14,17}
+<template>
+  <Environment ref="environmentTexture" />
+  <TresMesh>
+    <TresSphereGeometry />
+    <TresMeshStandardMaterial :env-map="envMap" />
+  </TresMesh>
+</template>
+
 <script setup lang="ts">
 import { Environment } from '@tresjs/cientos'
 
@@ -45,14 +53,6 @@ watch(environmentTexture, ({ getTexture }) => {
   envMap = getTexture()
 })
 </script>
-
-<template>
-  <Environment ref="environmentTexture" />
-  <TresMesh>
-    <TresSphereGeometry />
-    <TresMeshStandardMaterial :env-map="envMap" />
-  </TresMesh>
-</template>
 ```
 
 ## Props
