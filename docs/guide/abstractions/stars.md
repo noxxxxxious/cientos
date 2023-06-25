@@ -1,12 +1,12 @@
 # Stars
 
-`<Stars />` is a component that renders a stars in the sky of your scene. It is an abstraction that use Points, PointsMaterial and BufferGeometry to create a beautiful stars effect
+`<Stars />` is a component that renders stars in the sky of your scene. It is an abstraction that use Points, PointsMaterial, and BufferGeometry to create a beautiful starry effect.
 
 <!-- <StackBlitzEmbed projectId="tresjs-text3d-cientos" /> -->
 
 ## Usage
 
-You can use `<Stars />` component without passing any props, but still if you want you can tweak the props to find the best setup for you
+You can use the `<Stars />` component without passing any props, but you can use props from the table below to tweak the settings to better suit your needs.
 
 ```vue
 <template>
@@ -18,7 +18,7 @@ You can use `<Stars />` component without passing any props, but still if you wa
 </template>
 ```
 
-Notice that you can pass a texture as an alphaMap to personalize the star shape
+Notice that you can pass a texture as an alphaMap to modify the star shape.
 
 ```vue
 <template>
@@ -33,12 +33,12 @@ Notice that you can pass a texture as an alphaMap to personalize the star shape
 
 | Prop               | Description                                                            | Default |
 | :----------------- | :--------------------------------------------------------------------- | ------- |
-| **size**           | The size of the stars                        |   0.1      |
-| **sizeAttenuation**           | keep the same size regardless distance.|   true      |
-| **transparent**           | show transparency on the stars texture                                 | true     |
-| **alphaTest**         | enables the WebGL to know when not to render the pixeltext.                                                | 0.01     |
-| **alphaMap**  | texture of the stars | null      |
-| **count**   | number of stars      | 5000    |
-| **depth** | depth of star's shape                         | 50    |
-| **radius**      | Radius of star's shape                            | 100    |
-| **factor**    | factor of randomness scale star                            | 4       |
+| **size**           | The size of the stars.                        |   0.1      |
+| **sizeAttenuation**           | Keep the same size regardless distance.|   true      |
+| **transparent**           | Show transparency on the stars texture.                                 | true     |
+| **alphaTest**         | Enables WebGL to know when not to render the pixeltext.                                                | 0.01     |
+| **alphaMap**  | Texture of the stars. | null      |
+| **count**   | Number of stars.      | 5000    |
+| **depth** | Depth of the stars' shapes.                         | 50    |
+| **radius**      | Radius of the stars' shapes.                            | 100    |
+| **factor**    | Star scale randomness factor.                           | 4       |
