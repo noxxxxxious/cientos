@@ -33,7 +33,7 @@ You can also pass the `.hdr` file directly:
 
 You can access the model reference by pasing a `ref` to the `<Environment />` prop and then using the method `getTexture()` to get the object.
 
-```vue{4,6,9,14,17}
+```vue{2,5,12,14,17}
 <template>
   <Environment ref="environmentTexture" />
   <TresMesh>
